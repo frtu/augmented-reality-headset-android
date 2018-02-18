@@ -45,7 +45,9 @@ Connect with Android Studio :
 
 #### More documentation
 
-[All Moverio BT-200 documentation](https://tech.moverio.epson.com/en/bt-200/tools.html)
+* [Getting started & Presentation](https://www.slideshare.net/prelaunchlabs/epson-moverio-bt200-developer-getting-started)
+* [BT-200 Developer Network](https://tech.moverio.epson.com/en/bt-200/)
+* [All Moverio BT-200 documentation](https://tech.moverio.epson.com/en/bt-200/tools.html)
 
 ## Advices for developping on Android
 
