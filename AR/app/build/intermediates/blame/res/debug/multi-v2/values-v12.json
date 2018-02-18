@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/fred/git/android/ar/augmented-reality-headset-android/AR/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml",
+            "map": [
+                {
+                    "source": "/Users/fred/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.2.1.aar/ff871569f619ba84df60f9ee35ab31fd/res/values-v12/values-v12.xml",
+                    "from": {
+                        "startLines": "2,5,8,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,279,479,598",
+                        "endLines": "4,7,8,9",
+                        "endColumns": "12,12,118,94",
+                        "endOffsets": "274,474,593,688"
+                    }
+                }
+            ]
+        }
+    ]
+}

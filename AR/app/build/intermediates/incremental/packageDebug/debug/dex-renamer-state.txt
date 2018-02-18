@@ -1,0 +1,4 @@
+#Sun Feb 18 12:59:42 CST 2018
+base.0=/Users/fred/git/android/ar/augmented-reality-headset-android/AR/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
