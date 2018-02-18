@@ -7,12 +7,19 @@
     tools:context="com.github.frtu.android.ar.MainActivity">
 
     <TextView
+        android:id="@+id/textView3DSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="2D/3D Switch" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton_2d3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3DSwitch"
+        android:layout_below="@+id/textView3DSwitch"
+        android:text="ToggleButton"
+        android:textOff="2D"
+        android:textOn="3D" />
 
 </android.support.constraint.ConstraintLayout>
