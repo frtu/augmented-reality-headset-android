@@ -79,4 +79,13 @@ dependencies {
 }
 ```
 
-[Check Android lib support](https://developer.android.com/topic/libraries/support-library/packages.html)
+[Check latest Android lib support](https://developer.android.com/topic/libraries/support-library/packages.html)
+
+### Support Libraries
+
+* [Officiel Android support lib description](https://developer.android.com/topic/libraries/support-library/index.html)
+* [Stackoverflow - good feature listing of v4, v7, v13 support](https://stackoverflow.com/questions/29049908/appcompat-compatibility-and-support-libraries-for-lollipop-if-minimum-sdk-14)
+
+Material Design
+
+* [Material Design backport for older than 5.0 version](https://developer.android.com/training/material/compatibility.html)
