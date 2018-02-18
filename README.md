@@ -1,6 +1,7 @@
 # Augmented Reality headset using android
 Project to create an AR (Augmented Reality) project to deploy into a binocular glasses headset using Android.
 
+
 ## Moverio BT-200
 
 #### Tech specificiation
@@ -45,3 +46,35 @@ Connect with Android Studio :
 #### More documentation
 
 [All Moverio BT-200 documentation](https://tech.moverio.epson.com/en/bt-200/tools.html)
+
+## Advices for developping on Android
+
+### Library version
+
+When getting / copying sources from other repo, just make sure **compileSdkVersion** must match the support library.
+
+Android Studio : 
+
+* Go to **Project Structure > app > Dependencies**
+* Remove any lib
+* Replace by adding + maven "Library Dependency"
+
+
+Manually 
+
+* in build.gradle (Module: app) 
+* make sure to add the correct lib version :
+
+```JSON
+android {
+    compileSdkVersion 27
+    ...
+}
+...
+dependencies {
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:support-v4:27.0.2'
+}
+```
+
+[Check Android lib support](https://developer.android.com/topic/libraries/support-library/packages.html)
