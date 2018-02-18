@@ -15,6 +15,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         bt200Manager = new Bt200Manager(this);
-        bt200Manager.set2D3DToggleButton((ToggleButton) findViewById(R.id.toggleButton_2d3d));
+        bt200Manager.bind2D3DToggleButton((ToggleButton) findViewById(R.id.toggleButton_2d3d));
+        bt200Manager.bindSensorToggleButton((ToggleButton) findViewById(R.id.toggleButton_sensor));
+        bt200Manager.bind2D3DToggleButton((ToggleButton) findViewById(R.id.toggleButton_amute));
     }
 }
