@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/fred/git/android/ar/augmented-reality-headset-android/AR/app/src/main/assets"/><source path="/Users/fred/git/android/ar/augmented-reality-headset-android/AR/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/fred/git/android/ar/augmented-reality-headset-android/AR/app/src/debug/assets"/></dataSet></merger>
