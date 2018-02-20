@@ -31,4 +31,5 @@ dependencies {
 
     compile "com.android.support:appcompat-v7:$commonSupportLibVersion"
     compile "com.android.support:support-v4:$commonSupportLibVersion"
+    compile 'org.slf4j:slf4j-android:1.7.7'
 }
