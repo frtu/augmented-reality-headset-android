@@ -42,6 +42,12 @@ Connect with Android Studio :
 * [on Windows](https://tech.moverio.epson.com/en/bt-200/pdf/bt200_adb1505a_en.pdf)
 * on Mac directly [jump to Sheet 8](https://tech.moverio.epson.com/en/bt-200/pdf/bt200_adb1505a_en.pdf)
 
+#### Vuforia & Unity
+
+[Download unity-3.5.1 for Mac](http://download.unity3d.com/download_unity/unity-3.5.1.dmg)
+ 
+[Release notes - Vuforia version and BT-200 drop after 6.5](https://library.vuforia.com/articles/Release_Notes/Vuforia-SDK-Release-Notes)
+
 
 #### More documentation
 
@@ -89,3 +95,16 @@ dependencies {
 Material Design
 
 * [Material Design backport for older than 5.0 version](https://developer.android.com/training/material/compatibility.html)
+
+### Adding C/C++ source code
+#### NDK Environment setup
+
+* [Android studio - Install NDK, CMake & LLDB](https://developer.android.com/studio/projects/add-native-code.html#download-ndk)
+* [Android studio - Link gradle to your make file Android.mk](
+https://developer.android.com/studio/projects/gradle-external-native-builds.html#link-with-ui)
+* [Guide for Android.mk](https://developer.android.com/ndk/guides/android_mk.html)
+
+#### Coding
+
+* [Create your C/C++ source & header files](https://developer.android.com/studio/projects/add-native-code.html#create-sources)
+
