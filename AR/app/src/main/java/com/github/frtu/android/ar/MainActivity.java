@@ -17,6 +17,6 @@ public class MainActivity extends Activity {
         bt200Manager = new Bt200Manager(this);
         bt200Manager.bind2D3DToggleButton((ToggleButton) findViewById(R.id.toggleButton_2d3d));
         bt200Manager.bindSensorToggleButton((ToggleButton) findViewById(R.id.toggleButton_sensor));
-        bt200Manager.bind2D3DToggleButton((ToggleButton) findViewById(R.id.toggleButton_amute));
+        bt200Manager.bindMuteToggleButton((ToggleButton) findViewById(R.id.toggleButton_amute));
     }
 }

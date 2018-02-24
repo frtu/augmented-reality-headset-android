@@ -1,69 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.github.frtu.android.ar.MainActivity">
+<!--full horizontal screen-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
-    <TextView
-        android:id="@+id/textView3DSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2D/3D Switch"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <ToggleButton
-        android:id="@+id/toggleButton_2d3d"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3DSwitch"
-        android:text="ToggleButton"
-        android:textOff="2D"
-        android:textOn="3D"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="0dp" />
+        <TextView
+            android:id="@+id/textView3DSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:text="2D/3D Switch"/>
+
+        <ToggleButton
+            android:id="@+id/toggleButton_2d3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:text="ToggleButton"
+            android:textOff="2D"
+            android:textOn="3D"/>
 
 
-    <TextView
-        android:id="@+id/TextViewSensor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3DSwitch"
-        android:text="Sensor Mode"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="110dp" />
+        <TextView
+            android:id="@+id/TextViewSensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="Sensor Mode"/>
 
-    <ToggleButton
-        android:id="@+id/toggleButton_sensor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/TextViewSensor"
-        android:layout_below="@+id/toggleButton_2d3d"
-        android:text="ToggleButton"
-        android:textOff="Headset"
-        android:textOn="Controller"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="110dp" />
+        <ToggleButton
+            android:id="@+id/toggleButton_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ToggleButton"
+            android:textOff="Headset"
+            android:textOn="Controller"/>
 
-    <TextView
-        android:id="@+id/TextViewMute"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TextViewSensor"
-        android:text="Audio Mute"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="56dp" />
+        <TextView
+            android:id="@+id/TextViewMute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="Audio Mute"/>
 
-    <ToggleButton
-        android:id="@+id/toggleButton_amute"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/TextViewMute"
-        android:layout_below="@+id/toggleButton_2d3d"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="56dp" />
+        <ToggleButton
+            android:id="@+id/toggleButton_amute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:text="ToggleButton"/>
+    </FrameLayout>
+</LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
