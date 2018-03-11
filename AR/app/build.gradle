@@ -28,8 +28,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     implementation files('libs/BT200Ctrl.jar')
-
-    compile "com.android.support:appcompat-v7:$commonSupportLibVersion"
-    compile "com.android.support:support-v4:$commonSupportLibVersion"
-    compile 'org.slf4j:slf4j-android:1.7.7'
+    implementation "com.android.support:appcompat-v7:$commonSupportLibVersion"
+    implementation "com.android.support:support-v4:$commonSupportLibVersion"
+    implementation 'org.slf4j:slf4j-android:1.7.7'
+    implementation 'com.jaredrummler:android-device-names:1.0.9'
 }

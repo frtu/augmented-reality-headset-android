@@ -4,7 +4,7 @@ Project to create an AR (Augmented Reality) project to deploy into a binocular g
 
 ## Moverio BT-200
 
-#### Tech specificiation
+### Tech specificiation
 
 [BT-200](https://tech.moverio.epson.com/en/bt-200/pdf/bt200_tiw1405ce.pdf) :
 
@@ -15,7 +15,7 @@ Project to create an AR (Augmented Reality) project to deploy into a binocular g
 * USB Vendor ID (0x04B8)
 * FOV - Field Of View (20 degree)
 
-#### Software project
+### Setting project & startup
 
 Getting started :
 
@@ -32,6 +32,20 @@ bt200Manager.bind2D3DToggleButton((ToggleButton) findViewById(R.id.toggleButton_
 bt200Manager.bindSensorToggleButton((ToggleButton) findViewById(R.id.toggleButton_sensor));
 bt200Manager.bindMuteToggleButton((ToggleButton) findViewById(R.id.toggleButton_amute));
 ```
+
+When starting up look for this in LogCat :
+
+```
+.. I/Bt200Manager: Detected EPSON BT-200 deviceName=EPSON embt2
+```
+
+If the device model is not the one expected, deactivate instead of failing triggering features :
+
+```
+.. I/Bt200Manager: NOT EPSON BT-200, deactivate features ! deviceName=Xxx
+```
+
+### Setting up dev env
 
 #### Setup Moverio BT-200 <-> adb & Android Studio
 
