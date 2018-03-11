@@ -14,7 +14,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         CameraManager cameraManager = new CameraManager(this);
         cameraManager.checkCameraHardware();
-        cameraManager.getCameraInstance(0);
+        // BT-200 CameraManager: CAMERA PREVIEW height=480 width=640 max zoom=10
+        cameraManager.getCameraParameters(0);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

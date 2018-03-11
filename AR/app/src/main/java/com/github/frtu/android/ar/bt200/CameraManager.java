@@ -69,4 +69,17 @@ public class CameraManager {
         }
         return c; // returns null if camera is unavailable
     }
+
+    public static Camera.Parameters getCameraParameters(int index) {
+        Camera camera = getCameraInstance(index);
+
+        Camera.Parameters parameters = camera.getParameters();
+
+        Camera.Size previewSize = parameters.getPreviewSize();
+        int height = previewSize.height;
+        int width = previewSize.width;
+        logger.info("CAMERA PREVIEW height={} width={} max zoom={}", height, width, parameters.getMaxZoom());
+
+        return parameters;
+    }
 }
