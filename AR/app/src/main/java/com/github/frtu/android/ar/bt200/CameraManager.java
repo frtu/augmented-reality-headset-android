@@ -10,7 +10,13 @@ import org.slf4j.LoggerFactory;
 /**
  * This is the Camera Manager for prior than Android 5 (API 21) that deprecate Camera in favor of camera2.
  * <p>
- * See : https://developer.android.com/guide/topics/media/camera.html
+ * See : https://developer.android.com/guide/topics/media/camera.html <br/>
+ * API : https://developer.android.com/reference/android/hardware/Camera.html <br/>
+ * Controlling camera : https://developer.android.com/training/camera/cameradirect.html
+ * </p>
+ * <p>
+ * For using new Camera 2 API see https://github.com/googlesamples/android-Camera2Basic
+ * </p>
  * <p>
  * Created by fred on 11/03/2018.
  */
@@ -70,6 +76,12 @@ public class CameraManager {
         return c; // returns null if camera is unavailable
     }
 
+    /**
+     * Getting Camera Parameters : https://developer.android.com/reference/android/hardware/Camera.Parameters.html
+     *
+     * @param index
+     * @return
+     */
     public static Camera.Parameters getCameraParameters(int index) {
         Camera camera = getCameraInstance(index);
 
