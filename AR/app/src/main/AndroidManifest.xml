@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.github.frtu.android.ar">
 
+    <!--https://developer.android.com/guide/topics/media/camera.html-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--https://developer.android.com/guide/topics/manifest/uses-feature-element.html#hw-features-->
+    <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
 
     <application

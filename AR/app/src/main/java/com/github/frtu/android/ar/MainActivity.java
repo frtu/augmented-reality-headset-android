@@ -5,12 +5,17 @@ import android.os.Bundle;
 import android.widget.ToggleButton;
 
 import com.github.frtu.android.ar.bt200.Bt200Manager;
+import com.github.frtu.android.ar.bt200.CameraManager;
 
 public class MainActivity extends Activity {
     private Bt200Manager bt200Manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        CameraManager cameraManager = new CameraManager(this);
+        cameraManager.checkCameraHardware();
+        cameraManager.getCameraInstance(0);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
