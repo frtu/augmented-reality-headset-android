@@ -1,4 +1,4 @@
-package com.github.frtu.android.ar.bt200;
+package com.github.frtu.android.ar.camera;
 
 import android.content.Context;
 import android.hardware.Camera;

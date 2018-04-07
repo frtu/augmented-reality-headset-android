@@ -11,8 +11,8 @@ import android.widget.FrameLayout;
 import android.widget.ToggleButton;
 
 import com.github.frtu.android.ar.bt200.Bt200Manager;
-import com.github.frtu.android.ar.bt200.CameraManager;
-import com.github.frtu.android.ar.bt200.CameraPreviewBase;
+import com.github.frtu.android.ar.camera.CameraManager;
+import com.github.frtu.android.ar.camera.CameraPreviewBase;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
