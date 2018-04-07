@@ -94,4 +94,12 @@ public class CameraManager {
 
         return parameters;
     }
+
+    public static Camera releaseCamera(Camera camera){
+        if (camera != null){
+            logger.debug("Release the camera for other applications");
+            camera.release();
+        }
+        return null;
+    }
 }
