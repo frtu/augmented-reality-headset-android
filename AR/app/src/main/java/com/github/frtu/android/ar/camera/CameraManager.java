@@ -1,8 +1,10 @@
 package com.github.frtu.android.ar.camera;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.support.v4.content.ContextCompat;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,12 +34,25 @@ public class CameraManager {
     /**
      * Check if this device has a camera
      */
-    public boolean checkCameraHardware() {
+    public boolean hasCameraHardware() {
         if (mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA)) {
-            logger.debug("This device has a camera");
+            logger.info("This device has a camera");
             return true;
         } else {
-            logger.debug("No camera on this device");
+            logger.info("No camera on this device");
+            return false;
+        }
+    }
+
+    /**
+     * Check if permission has been granted to this camera
+     */
+    public boolean hasCameraPermission() {
+        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+            logger.info("CAMERA Permission granted!");
+            return true;
+        } else {
+            logger.info("CAMERA Permission NOT GRANTED!");
             return false;
         }
     }
@@ -95,8 +110,8 @@ public class CameraManager {
         return parameters;
     }
 
-    public static Camera releaseCamera(Camera camera){
-        if (camera != null){
+    public static Camera releaseCamera(Camera camera) {
+        if (camera != null) {
             logger.debug("Release the camera for other applications");
             camera.release();
         }
