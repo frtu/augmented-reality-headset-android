@@ -1,9 +1,12 @@
 package com.github.frtu.android.ar.camera;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.os.Build;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
 import org.slf4j.Logger;
@@ -54,6 +57,18 @@ public class CameraManager {
         } else {
             logger.info("CAMERA Permission NOT GRANTED!");
             return false;
+        }
+    }
+
+    public void checkAndRequestCameraPermissionIfPossible(Activity activity) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
+            logger.info("Camera is mandatory but may be authorized later above android version>22. Current version = {}.", Build.VERSION.SDK_INT);
+
+            // https://developer.android.com/training/permissions/requesting
+            if (!hasCameraPermission()) {
+                logger.warn("Ask user to authorize in app. Or authorize later by going to your device settings -> apps -> YOUR APP -> Permissions -> turn on camera permission!");
+                ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.CAMERA}, 1);
+            }
         }
     }
 

@@ -37,6 +37,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         CameraManager cameraManager = new CameraManager(this);
         cameraManager.hasCameraHardware();
+        cameraManager.checkAndRequestCameraPermissionIfPossible(this);
+
         // BT-200 CameraManager: CAMERA PREVIEW height=480 width=640 max zoom=10
         mCamera = cameraManager.getCameraInstance(0);
 
