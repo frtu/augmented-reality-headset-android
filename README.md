@@ -90,13 +90,13 @@ adb uninstall -v org.opencv.engine
 
 ##### OpenCV full guidelines
 
-[Follow the tutorial guide here](https://docs.opencv.org/3.4.0/d0/d6c/tutorial_dnn_android.html)
+* [Follow the tutorial guide here](https://docs.opencv.org/3.4.0/d0/d6c/tutorial_dnn_android.html)
+* [Simple guideline with Emulator](https://zami0xzami.wordpress.com/2016/03/17/opencv-for-mobile-devices-using-android-studio/)
 
 #### Vuforia & Unity
 
-[Download unity-3.5.1 for Mac](http://download.unity3d.com/download_unity/unity-3.5.1.dmg)
- 
-[Release notes - Vuforia version and BT-200 drop after 6.5](https://library.vuforia.com/articles/Release_Notes/Vuforia-SDK-Release-Notes)
+* [Download unity-3.5.1 for Mac](http://download.unity3d.com/download_unity/unity-3.5.1.dmg)
+* [Release notes - Vuforia version and BT-200 drop after 6.5](https://library.vuforia.com/articles/Release_Notes/Vuforia-SDK-Release-Notes)
 
 
 #### More documentation
