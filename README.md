@@ -137,6 +137,17 @@ dependencies {
 
 [Check latest Android lib support](https://developer.android.com/topic/libraries/support-library/packages.html)
 
+### Android Basics
+
+#### Version check
+
+[Android version by Code names](https://developer.android.com/reference/android/os/Build.VERSION_CODES)
+
+#### Permissions
+
+Starting from Android 6.0 (API level 23), Permission is defined by Apps. To check & request permission :
+[Android Permission](https://developer.android.com/training/permissions/requesting#java)
+
 ### Support Libraries
 
 * [Officiel Android support lib description](https://developer.android.com/topic/libraries/support-library/index.html)
